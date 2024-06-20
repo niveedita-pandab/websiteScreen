@@ -1,0 +1,282 @@
+img {
+    height: 30px;
+}
+
+hr {
+    margin: 0px;
+}
+
+body {
+    text-decoration: none;
+    color: black;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.navbar1 {
+    font-size: 12px;
+    margin-top: 10px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar1 .nav-underline {
+    margin: auto;
+}
+
+.navbar2 {
+    display: flex;
+    margin-left: 5px;
+}
+
+.navbar3 {
+    display: flex;
+    margin-left: 20px;
+    height: 50px;
+}
+
+.navbar3 .nav-underline {
+    margin-top: 12px;
+}
+
+.navbar3 .sidebtn {
+    margin-left: auto;
+    height: 26px;
+}
+
+.navbar3 .sidebtn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-outline-primary{
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 150px;
+    border-radius: 0;
+    border-color: rgb(13, 84, 151);
+}
+
+.navbar3 .sidebtn .btn-outline-primary a{
+    color: rgb(13, 84, 151);
+}
+
+.btn-primary {
+    color:white;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(13, 84, 151);
+    width: 150px;
+    border-radius: 0;
+}
+
+.modal-body .btn {
+    display: block;
+    width: 100%;
+}
+
+.modal-body .table {
+    border: 1px solid rgb(13, 84, 151);
+    border-collapse: collapse;
+}
+
+.shcontainer {
+    background-color: rgb(237, 233, 233);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    margin: 0;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom:auto;
+}
+
+.box-table {
+    border: 2px solid rgb(13, 84, 151);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.box-table-header {
+    display: flex;
+    padding: 4px;
+    width: 100%;
+}
+
+h4 {
+    color: #0d6efd;
+    font-size: 20px;
+}
+
+.year {
+    margin-right: 20px;
+}
+
+.entries {
+    margin-top: 3px;
+    display: flex;
+    margin-left: auto;
+}
+
+#number {
+    border: 1px solid #0d6efd;
+    border-radius: 4px;
+    margin-left: 6px;
+    margin-right: 20px;
+    padding: 0 10px;
+
+}
+
+#search {
+    border: 1px solid #0d6efd;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 60px;
+
+}
+
+.shtable .table .act {
+    color: green;
+}
+
+.shtable .table .ina {
+    color: red;
+}
+
+.shtable .table .add button {
+    text-decoration: none;
+    padding: 0;
+    font-size: 14px;
+    background-color: white;
+    border-color: white;
+    color: #0d6efd;
+}
+
+.shtable .table .ded button {
+    text-decoration: none;
+    padding: 0;
+    font-size: 14px;
+    background-color: white;
+    border-color: white;
+    color: orange;
+}
+
+.table .add {
+    color: #0d6efd;
+}
+
+.table .ded {
+    color: orange;
+}
+
+.shtable .table .act,
+.ina {
+    display: flex;
+    
+}
+
+.shtable .table .act i,
+.ina i {
+    font-size: 23px;
+    margin-left: auto;
+}
+
+.tablefooter {
+    display: flex;
+}
+
+.pagenum button {
+    margin: 2px;
+}
+
+.pagenum {
+    display: flex;
+    margin-left: auto;
+}
+
+.orgtables p {
+    font-size: 18px;
+    color: rgb(9, 182, 9);
+    font-weight: 500;
+}
+
+table .net {
+    color: rgb(9, 182, 9);
+}
+
+.fa-pen-to-square {
+    color: rgb(13, 84, 151);
+    margin-right: 22px;
+}
+
+.fa-trash-can {
+    color: red;
+}
+
+.detgroup h4 {
+    color: rgb(9, 204, 9);
+}
+
+.detgroup p {
+    color: green;
+    font-weight: 400;
+}
+
+.table-responsive {
+    overflow-x: scroll;
+}
+
+.table-responsive table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 500px;
+    table-layout: fixed;
+}
+
+table td,th {
+    border-left: 1px solid rgb(237, 233, 233);
+    border-right: 1px solid rgb(237, 233, 233);
+}
+
+table td:first-child,th:first-child {
+    border-left: none;
+}
+
+table td:last-child,th:last-child {
+    border-right: none;
+}
+
+.table-responsive table th,
+td {
+    text-align: left;
+    padding: 8px;
+    width: 185px;
+}
+.detgroup .table-responsive table th,
+td {
+    width: 255px;
+}
+
+.detgroup .table-responsive table .imp {
+    font-weight: 900;
+    color: rgb(13, 84, 151);
+}
+
+.detgroup .table-responsive table .headcol {
+    border-right: 1px solid rgb(237, 233, 233);
+    position: -webkit-sticky;
+    position: sticky;
+    left:0;
+}

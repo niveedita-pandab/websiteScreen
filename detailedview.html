@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fifth Peak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="webScreenStyle.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <div class="navbar1">
+        <img
+            src="https://static.wixstatic.com/media/5fa5ee_ba5644f9ea1944cb8e93a7566348f287~mv2.png/v1/fill/w_420,h_168,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FP_transparent.png">
+        <ul class="nav justify-content-center nav-underline">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Organization</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Expense</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Visit</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CRM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Items</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Quotation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Time</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Inventory</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Receivables</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">EMS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">NPL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Compressor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" id="active" href="#">Payroll</a>
+            </li>
+        </ul>
+        <div class="sidebtn">
+            <button type="button" class="btn"><i class="fa-regular fa-envelope"></i> Bakta Salla</button>
+            <button type="button" class="btn"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <div class="navbar2">
+        <nav class="nav">
+            <a class="nav-link" href="#"><i class="fa-solid fa-house"></i></a>
+            <a class="nav-link" href="#">Pay Roll</a>
+            <a class="nav-link" href="#">Dashboard</a>
+        </nav>
+    </div>
+
+    <div class="navbar3">
+        <ul class="nav nav-underline">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Setup Salary Heads</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="org.html">ORG Def</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mediclaim.html">Mediclaim Setup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="vehicle.html">Vehicle EMI</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="salaryview.html">Salary View</a>
+            </li>
+        </ul>
+        <div class="sidebtn">
+            <button type="button" class="btn btn-outline-primary"><a href="salaryview.html">Summary View</a></button>
+            <button type="button" class="btn btn-primary"><a href="detailedview.html">Detailed View</a></button>
+        </div>
+        
+        
+    </div>
+    <hr>
+    <div class="shcontainer">
+        <div class="box">
+            <div class="box-table">
+                <div class="box-table-header">
+                    <h4><i class="fa-regular fa-newspaper"></i> Salary Detailed View</h4>
+                    <div class="entries">
+                        <div class="year">
+                            <p>For all Employees <i class="fa-solid fa-chevron-left"></i> &nbsp; November &nbsp; <i class="fa-solid fa-chevron-right"></i></p>
+                        </div>
+                        <p><b>Shown</b></p>
+                        <p id="number">10 entries</p>
+                        <p id="search"><i class="fa-solid fa-magnifying-glass"></i> Search this table...</p>
+                    </div>
+                </div>
+                <div class="detgroup">
+                    <div class="detgrp1">
+                        <h4>KNS Technologies</h4>
+                        <p>Second Floor, Sun Arcade, 13, 100 Feet Ring Rd, Dollar Scheme Colony, 1st stage, BTM Layout, Bengaluru, Karnataka 560068</p>
+
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr class="colm">
+                                    <th scope="col" class="headcol">Emp Name</th>
+                                    <th scope="col">Arrears</th>
+                                    <th scope="col">Basic Salary</th>
+                                    <th scope="col">Birthday Allowance</th>
+                                    <th scope="col">Bonus</th>
+                                    <th scope="col">Bonus Target</th>
+                                    <th scope="col">CITI Allowance</th>
+                                    <th scope="col">----------</th>
+                                    <th scope="col">CITI Allowance @ 10%</th>
+                                    <th scope="col">CITI Allowance @ 12%</th>
+                                    <th scope="col">Diwali Gift</th>
+                                    <th scope="col">EMI Vehicle</th>
+                                    <th scope="col">Fixed Personal Allowance</th>
+                                    <th scope="col">Gratuity</th>
+                                    <th scope="col">House Rent Allowance</th>
+                                    <th scope="col">HRA</th>
+                                    <th scope="col">-------</th>
+                                    <th scope="col">HRA @ 10%</th>
+                                    <th scope="col">HRA @ 50%</th>
+                                    <th scope="col">Incentive Against Scheme</th>
+                                    <th scope="col">Leave Encashment</th>
+                                    <th scope="col">Mobile Allowance</th>
+                                    <th scope="col">Mobile Allowance @ 12%</th>
+                                    <th scope="col">Monthly Sales Incentive</th>
+                                    <th scope="col">Net Allowance</th>
+                                    <th scope="col">Perquisit</th>
+                                    <th scope="col">Rounding Off</th>
+                                    <th scope="col">Sales Incentive</th>
+                                    <th scope="col">Tea Allowance</th>
+                                    <th scope="col">----------</th>
+                                    <th scope="col">Tea Allowance at 10%</th>
+                                    <th scope="col">Tea Allowance at 11%</th>
+                                    <th scope="col">Travelling Allowance</th>
+                                    <th scope="col">----------</th>
+                                    <th scope="col">Travelling Allowance at 10%</th>
+                                    <th scope="col">Travelling Allowance at 11%</th>
+                                    <th scope="col">Vehicle Maintenance</th>
+                                    <th scope="col" class="imp">Total Earnings</th>
+                                    <th scope="col">Advance Against Salary</th>
+                                    <th scope="col">Deduction Expense</th>
+                                    <th scope="col">Electricity Bill Residence</th>
+                                    <th scope="col">Employee Provident Fund</th>
+                                    <th scope="col">-------------------</th>
+                                    <th scope="col">Employee Provident Fund at 12%</th>
+                                    <th scope="col">Interest (Non Issue C Form)</th>
+                                    <th scope="col">Interest On Loan</th>
+                                    <th scope="col">----------</th>
+                                    <th scope="col">Maintenance Residence</th>
+                                    <th scope="col">MGL Bill Residence</th>
+                                    <th scope="col">Mobile Bill</th>
+                                    <th scope="col">Penalty</th>
+                                    <th scope="col">Personal Loan</th>
+                                    <th scope="col">Professional Tax</th>
+                                    <th scope="col">Salary Advance</th>
+                                    <th scope="col">TATA Docomo Charges</th>
+                                    <th scope="col">TDS Payable</th>
+                                    <th scope="col">TDS - Salary</th>
+                                    <th scope="col" class="imp">Total Deductions</th>
+                                    <th scope="col" class="imp">Net Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr class="row1">
+                                    <td class="headcol">Employee 1</td>
+                                    <td>----------</td>
+                                    <td>13000.00</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>100.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>138.67</td>
+                                    <td>143.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>468.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>260.00</td>
+                                    <td>----------</td>
+                                    <td class="ded">-0.34</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>868.00</td>
+                                    <th scope="row" class="imp">868.00</th>
+                                    <td>----------</td>
+                                    <td class="ded">----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1800.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>260.00</td>
+                                    <td>260.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>5000.00</td>
+                                    <td>5000.00</td>
+                                    <td>200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>3000.00</td>
+                                    <th scope="row" class="imp">1760.00</th>
+                                    <th scope="row" class="imp">12973.00</td>
+                                </tr>
+                                <tr class="row2">
+                                    <td class="headcol">Employee 2</td>
+                                    <td>----------</td>
+                                    <td>13000.00</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>300.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1500.00</td>
+                                    <td>1500.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>520.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>200.00</td>
+                                    <td>----------</td>
+                                    <td class="ded">-0.33</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>868.00</td>
+                                    <th scope="row" class="imp">868.00</th>
+                                    <td>----------</td>
+                                    <td class="ded">----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1800.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>520.00</td>
+                                    <td>520.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>5000.00</td>
+                                    <td>5000.00</td>
+                                    <td>200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>3000.00</td>
+                                    <th scope="row" class="imp">4000.00</th>
+                                    <th scope="row" class="imp">16000.00</td>
+                                </tr>
+                                <tr class="row3">
+                                    <td class="headcol">Employee 3</td>
+                                    <td>----------</td>
+                                    <td>13000.00</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>800.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1475.00</td>
+                                    <td>1475.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1250.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>300.00</td>
+                                    <td>----------</td>
+                                    <td class="ded">-0.34</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <th scope="row" class="imp">1000.00</th>
+                                    <td>----------</td>
+                                    <td class="ded">----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1800.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>650.00</td>
+                                    <td>650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>5000.00</td>
+                                    <td>5000.00</td>
+                                    <td>200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>3000.00</td>
+                                    <th scope="row" class="imp">2000.00</th>
+                                    <th scope="row" class="imp">20400.00</td>
+                                </tr>
+                                <tr class="row4">
+                                    <td class="headcol">Employee 4</td>
+                                    <td>----------</td>
+                                    <td>13000.00</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>2870.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1500.00</td>
+                                    <td>1500.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1300.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>450.00</td>
+                                    <td>----------</td>
+                                    <td class="ded">-0.33</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <th scope="row" class="imp">1000.00</th>
+                                    <td>----------</td>
+                                    <td class="ded">----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1800.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>260.00</td>
+                                    <td>260.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>5000.00</td>
+                                    <td>5000.00</td>
+                                    <td>200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>3000.00</td>
+                                    <th scope="row" class="imp">5000.00</th>
+                                    <th scope="row" class="imp">17740.00</td>
+                                </tr>
+                                <tr class="row5">
+                                    <td class="headcol">Employee 5</td>
+                                    <td>----------</td>
+                                    <td>13000.00</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>39000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1500.00</td>
+                                    <td>1500.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>144.00</td>
+                                    <td>----------</td>
+                                    <td class="ded">-0.34</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <th scope="row" class="imp">1000.00</th>
+                                    <td>----------</td>
+                                    <td class="ded">----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1800.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>260.00</td>
+                                    <td>260.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>5000.00</td>
+                                    <td>5000.00</td>
+                                    <td>200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>3000.00</td>
+                                    <th scope="row" class="imp">5000.00</th>
+                                    <th scope="row" class="imp">20400.00</td>
+                                </tr>
+                                <tr class="row6">
+                                    <td class="headcol">Employee 6</td>
+                                    <td>----------</td>
+                                    <td>13000.00</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>45000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1500.00</td>
+                                    <td>1500.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1500.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>364.00</td>
+                                    <td>----------</td>
+                                    <td class="ded">-0.33</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <th scope="row" class="imp">1000.00</th>
+                                    <td>----------</td>
+                                    <td class="ded">----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1800.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>260.00</td>
+                                    <td>260.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>5000.00</td>
+                                    <td>5000.00</td>
+                                    <td>200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>3000.00</td>
+                                    <th scope="row" class="imp">5000.00</th>
+                                    <th scope="row" class="imp">20400.00</td>
+                                </tr>
+                                <tr class="row7">
+                                    <td class="headcol">Employee 7</td>
+                                    <td>----------</td>
+                                    <td>13000.00</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <td>1100.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>39000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1500.00</td>
+                                    <td>1500.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>258.00</td>
+                                    <td>----------</td>
+                                    <td class="ded">-0.34</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <th scope="row" class="imp">1000.00</th>
+                                    <td>----------</td>
+                                    <td class="ded">----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1800.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>260.00</td>
+                                    <td>260.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>5000.00</td>
+                                    <td>5000.00</td>
+                                    <td>200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>3000.00</td>
+                                    <th scope="row" class="imp">5000.00</th>
+                                    <th scope="row" class="imp">20400.00</td>
+                                </tr>
+                                <tr class="row8">
+                                    <td class="headcol">Employee 8</td>
+                                    <td>----------</td>
+                                    <td>13000.00</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <td>1230.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>45000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1500.00</td>
+                                    <td>1500.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>364.00</td>
+                                    <td>----------</td>
+                                    <td class="ded">-0.33</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <th scope="row" class="imp">1000.00</th>
+                                    <td>----------</td>
+                                    <td class="ded">----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1800.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>260.00</td>
+                                    <td>260.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>5000.00</td>
+                                    <td>5000.00</td>
+                                    <td>200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>3000.00</td>
+                                    <th scope="row" class="imp">5000.00</th>
+                                    <th scope="row" class="imp">20400.00</td>
+                                </tr>
+                                <tr class="row9">
+                                    <td class="headcol">Employee 9</td>
+                                    <td>----------</td>
+                                    <td>13000.00</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <td>1800.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>45000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1500.00</td>
+                                    <td>1500.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>364.00</td>
+                                    <td>----------</td>
+                                    <td class="ded">-0.34</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <th scope="row" class="imp">1000.00</th>
+                                    <td>----------</td>
+                                    <td class="ded">----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1800.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>260.00</td>
+                                    <td>260.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>5000.00</td>
+                                    <td>5000.00</td>
+                                    <td>200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>3000.00</td>
+                                    <th scope="row" class="imp">5000.00</th>
+                                    <th scope="row" class="imp">20400.00</td>
+                                </tr>
+                                <tr class="row10">
+                                    <td class="headcol">Employee 10</td>
+                                    <td>----------</td>
+                                    <td>13000.00</td>
+                                    <td>1000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <td>2000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>45000.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1500.00</td>
+                                    <td>1500.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>364.00</td>
+                                    <td>----------</td>
+                                    <td class="ded">-0.33</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1650.00</td>
+                                    <td>1650.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1000.00</td>
+                                    <th scope="row" class="imp">1000.00</th>
+                                    <td>----------</td>
+                                    <td class="ded">----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>1800.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>260.00</td>
+                                    <td>260.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>5000.00</td>
+                                    <td>5000.00</td>
+                                    <td>200.00</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>----------</td>
+                                    <td>3000.00</td>
+                                    <th scope="row" class="imp">5000.00</th>
+                                    <th scope="row" class="imp">20400.00</th>
+                                </tr>
+                            </tbody>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <th scope="row" class="imp headcol">Grand Total</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">13000.00</th>
+                                    <th scope="row" class="imp">1000.00</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">1000.00</th>
+                                    <th scope="row" class="imp">2000.00</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">45000.00</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">1500.00</th>
+                                    <th scope="row" class="imp">1500.00</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">1200.00</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">364.00</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">-0.33</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">1650.00</th>
+                                    <th scope="row" class="imp">1650.00</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">1650.00</th>
+                                    <th scope="row" class="imp">1650.00</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">1000.00</th>
+                                    <th scope="row" class="imp">1000.00</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">1800.00</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">260.00</th>
+                                    <th scope="row" class="imp">260.00</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">5000.00</th>
+                                    <th scope="row" class="imp">5000.00</th>
+                                    <th scope="row" class="imp">200.00</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">----------</th>
+                                    <th scope="row" class="imp">3000.00</th>
+                                    <th scope="row" class="imp">5000.00</th>
+                                    <th scope="row" class="imp">20400.00</th>
+                                </tr>
+                            </tbody>
+                            <tbody class="table-group-divider">
+                                <tr></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tablefooter">
+                    <p>Showing 1 to 5 entries</p>
+                    <div class="pagenum">
+                        <button type="button" class="btn btn-outline-dark btn-sm" disabled><i
+                                class="fa-solid fa-chevron-left"></i></button>
+                        <button type="button" class="btn btn-outline-dark btn-sm active">1</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm">2</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm">3</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm">4</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm">5</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm"><i
+                                class="fa-solid fa-chevron-right"></i></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

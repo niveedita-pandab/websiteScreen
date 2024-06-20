@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fifth Peak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="webScreenStyle.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <div class="navbar1">
+        <img
+            src="https://static.wixstatic.com/media/5fa5ee_ba5644f9ea1944cb8e93a7566348f287~mv2.png/v1/fill/w_420,h_168,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FP_transparent.png">
+        <ul class="nav justify-content-center nav-underline">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Organization</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Expense</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Visit</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CRM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Items</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Quotation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Time</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Inventory</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Receivables</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">EMS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">NPL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Compressor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" id="active" href="#">Payroll</a>
+            </li>
+        </ul>
+        <div class="sidebtn">
+            <button type="button" class="btn"><i class="fa-regular fa-envelope"></i> Bakta Salla</button>
+            <button type="button" class="btn"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <div class="navbar2">
+        <nav class="nav">
+            <a class="nav-link" href="#"><i class="fa-solid fa-house"></i></a>
+            <a class="nav-link" href="#">Pay Roll</a>
+            <a class="nav-link" href="#">Dashboard</a>
+        </nav>
+    </div>
+
+    <div class="navbar3">
+        <ul class="nav nav-underline">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Setup Salary Heads</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="org.html">ORG Def</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mediclaim.html">Mediclaim Setup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="vehicle.html">Vehicle EMI</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="salaryview.html">Salary View</a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div class="shcontainer">
+        <div class="box">
+            <div class="box-table">
+                <div class="box-table-header">
+                    <h4><i class="fa-solid fa-sitemap"></i> Organization Level Defaults</h4>
+                    <div class="entries">
+                        <div class="year">
+                            <p><i class="fa-solid fa-chevron-left"></i> 2024 <i class="fa-solid fa-chevron-right"></i></p>
+                        </div>
+                        <p><b>Shown</b></p>
+                        <p id="number">10 entries</p>
+                        <p id="search"><i class="fa-solid fa-magnifying-glass"></i> Search this table...</p>
+                    </div>
+                </div>
+                <div class="orgtables">
+                    <div class="gross-salary">
+                        <p>Gross Salary</p>
+                        <table class="table table-sm">
+                            <thead>
+                              <tr>
+                                <th scope="col">Salary Head</th>
+                                <th scope="col">Percent</th>
+                                <th scope="col">Amount</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                              <tr>
+                                <td>Arrears</th>
+                                <td>10%</td>
+                                <td>1000</td>
+                              </tr>
+                              <tr>
+                                <td>Basic Salary</th>
+                                <td>10%</td>
+                                <td>1000</td>
+                              </tr>
+                              <tr>
+                                <td>Birthday Allowance</th>
+                                <td>10%</td>
+                                <td>1000</td>
+                              </tr>
+                              <tr>
+                                <td>Bonus</th>
+                                <td>10%</td>
+                                <td>1000</td>
+                              </tr>
+                              <tr>
+                                <td>Bonus Target</th>
+                                <td>10%</td>
+                                <td>1000</td>
+                              </tr>
+                              <tr>
+                                <td>Citi</th>
+                                <td>10%</td>
+                                <td>1000</td>
+                              </tr>
+                              <tr>
+                                <td>HRA</th>
+                                <td>10%</td>
+                                <td>1000</td>
+                              </tr>
+                            </tbody>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                  <th scope="row">Total Gross Salary</th>
+                                  <th scope="row">70%</th>
+                                  <th scope="row">7000</th>
+                                </tr>
+                            </tbody>
+                            <tbody class="table-group-divider">
+                                <tr></tr>
+                            </tbody>
+                          </table>
+                          
+                    </div>
+                    <div class="fixed-deductions">
+                        <p>Fixed Deductions</p>
+                        <table class="table table-sm">
+                            <tbody class="table-group-divider">
+                              <tr>
+                                <td>Professional Tax</th>
+                                <td>10%</td>
+                                <td>1000</td>
+                              </tr>
+                              <tr>
+                                <td>Some Other</th>
+                                <td>10%</td>
+                                <td>1000</td>
+                              </tr>
+                              <tr>
+                                <td>Deduction</th>
+                                <td>10%</td>
+                                <td>1000</td>
+                              </tr>
+                            </tbody>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                  <th scope="row">Net Salary to Hand</th>
+                                  <th scope="row">70%</th>
+                                  <th scope="row">7000</th>
+                                </tr>
+                            </tbody>
+                            <tbody class="table-group-divider">
+                                <tr></tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class="tablefooter">
+                    <p>Showing 1 to 5 entries</p>
+                    <div class="pagenum">
+                        <button type="button" class="btn btn-outline-dark btn-sm" disabled><i
+                                class="fa-solid fa-chevron-left"></i></button>
+                        <button type="button" class="btn btn-outline-dark btn-sm active">1</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm">2</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm">3</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm">4</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm">5</button>
+                        <button type="button" class="btn btn-outline-dark btn-sm"><i
+                                class="fa-solid fa-chevron-right"></i></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
